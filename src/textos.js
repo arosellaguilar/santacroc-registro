@@ -3,7 +3,8 @@
 
 // Se guarda en cada lead junto con la fecha de consentimiento.
 // Cada vez que cambie el texto legal de privacidad, cambiar esta versión.
-export const VERSION_LEGAL = 'v1-2026-10'
+export const VERSION_LEGAL = 'v2-2026-10'
+export const URL_POLITICA_WEB = "https://santacroc.com/politica-de-privacitat/"
 
 export const IDIOMAS = ['ca', 'es', 'en']
 
@@ -40,7 +41,11 @@ export const TEXTOS = {
     email: 'Correu electrònic',
     telefono: 'Telèfon',
     mensaje: 'Missatge (opcional)',
-    consentimiento: "He llegit i accepto la política de privadesa i consento rebre informació comercial de La Singular Gourmet S.L.",
+    consentimiento: "He llegit i accepto la política de privadesa (obligatori)",
+    consentimientoComercial: "Consento rebre informació comercial de La Singular Gourmet S.L. per mitjans electrònics (opcional)",
+    leerPolitica: "Llegir la política de privadesa i cookies",
+    cerrarPolitica: "Tancar",
+    politicaWeb: "Política de privadesa general de santacroc.com",
     verLegal: 'Política de privadesa i cookies',
     enviar: 'Envia',
     enviando: 'Enviant…',
@@ -68,10 +73,10 @@ export const TEXTOS = {
     legal: [
       "Responsable: La Singular Gourmet S.L. (marca SåntåCroc), NIF B56736515, C/ Albert Ferrer i Soler nº 7, 08800 Vilanova i la Geltrú. Contacte per exercir els teus drets: hola@santacroc.com.",
       "Dades que recollim: nom, nom de l'empresa i tipus de negoci (si ets empresa), adreça, codi postal, població, correu electrònic, telèfon, el missatge opcional que ens deixis i l'idioma que has fet servir.",
-      "Finalitat: atendre la teva sol·licitud d'informació i enviar-te informació comercial sobre els nostres productes per mitjans electrònics. Si ets dins la nostra zona de repartiment proper, també valorar donar-te accés a la botiga.",
-      "Legitimació: el teu consentiment, que pots retirar en qualsevol moment.",
-      "Destinataris: no cedim les teves dades a tercers, tret d'obligació legal. Els proveïdors que ens presten serveis tecnològics (allotjament i base de dades) hi accedeixen només com a encarregats del tractament, amb garanties adequades.",
-      "Conservació: 24 mesos des del nostre darrer contacte amb tu, o fins que retiris el consentiment si és abans.",
+      "Finalitats: (1) atendre la teva sol·licitud d'informació i contactar-te per respondre-la; si ets dins la nostra zona de repartiment proper, també valorar donar-te accés a la botiga en línia; (2) enviar-te informació comercial sobre els nostres productes per mitjans electrònics, només si marques la casella corresponent, que és opcional.",
+      "Legitimació: per atendre la teva sol·licitud, la teva petició i l'acceptació d'aquesta política; per a les comunicacions comercials, el teu consentiment, que pots retirar en qualsevol moment.",
+      "Destinataris i transferències internacionals de dades: per prestar els nostres serveis utilitzem proveïdors tecnològics que poden tractar dades personals per compte nostre: Vercel (allotjament, desplegament i infraestructura de l'aplicació web), Resend (enviament i gestió de comunicacions per correu electrònic) i Supabase (base de dades, amb infraestructura a la Unió Europea). Aquests proveïdors poden tractar dades personals als Estats Units. Les transferències internacionals es faran de conformitat amb el capítol V del Reglament General de Protecció de Dades (RGPD), sobre la base del mecanisme de transferència que sigui aplicable en cada cas, com la decisió d'adequació relativa al Marc de Privadesa de Dades UE-EUA, quan l'entitat receptora estigui certificada i la transferència estigui coberta per aquesta decisió, o les clàusules contractuals tipus aprovades per la Comissió Europea, quan correspongui. Pots sol·licitar informació addicional sobre les garanties aplicables a aquestes transferències i sobre com obtenir-ne una còpia mitjançant els canals de contacte d'aquesta política. No cedim les teves dades a altres tercers, tret d'obligació legal.",
+      "Conservació: les dades personals proporcionades es conservaran durant el termini necessari per complir les obligacions legals, o fins que en sol·licitis la supressió, quan hi estiguis legitimat.",
       "Drets: pots accedir, rectificar i suprimir les teves dades, oposar-te al tractament, limitar-lo i sol·licitar-ne la portabilitat escrivint a hola@santacroc.com. Si consideres que no tractem correctament les teves dades, pots reclamar davant l'Agència Espanyola de Protecció de Dades (aepd.es).",
       "Cookies: aquesta pàgina no utilitza cookies d'analítica ni de publicitat, ni desa cap dada al teu dispositiu.",
     ],
@@ -101,7 +106,11 @@ export const TEXTOS = {
     email: 'Correo electrónico',
     telefono: 'Teléfono',
     mensaje: 'Mensaje (opcional)',
-    consentimiento: 'He leído y acepto la política de privacidad y consiento recibir información comercial de La Singular Gourmet S.L.',
+    consentimiento: "He leído y acepto la política de privacidad (obligatorio)",
+    consentimientoComercial: "Consiento recibir información comercial de La Singular Gourmet S.L. por medios electrónicos (opcional)",
+    leerPolitica: "Leer la política de privacidad y cookies",
+    cerrarPolitica: "Cerrar",
+    politicaWeb: "Política de privacidad general de santacroc.com",
     verLegal: 'Política de privacidad y cookies',
     enviar: 'Enviar',
     enviando: 'Enviando…',
@@ -129,10 +138,10 @@ export const TEXTOS = {
     legal: [
       "Responsable: La Singular Gourmet S.L. (marca SåntåCroc), NIF B56736515, C/ Albert Ferrer i Soler nº 7, 08800 Vilanova i la Geltrú. Contacto para ejercer tus derechos: hola@santacroc.com.",
       "Datos que recogemos: nombre, nombre de la empresa y tipo de negocio (si eres empresa), dirección, código postal, población, email, teléfono, el mensaje opcional que nos dejes y el idioma que has usado.",
-      "Finalidad: atender tu solicitud de información y enviarte información comercial sobre nuestros productos por medios electrónicos. Si estás en nuestra zona de reparto cercano, también valorar darte acceso a la tienda.",
-      "Legitimación: tu consentimiento, que puedes retirar en cualquier momento.",
-      "Destinatarios: no cedemos tus datos a terceros, salvo obligación legal. Los proveedores que nos prestan servicios tecnológicos (alojamiento y base de datos) acceden a ellos solo como encargados del tratamiento, con garantías adecuadas.",
-      "Conservación: 24 meses desde nuestro último contacto contigo, o hasta que retires tu consentimiento si es antes.",
+      "Finalidades: (1) atender tu solicitud de información y contactarte para responderla; si estás en nuestra zona de reparto cercano, también valorar darte acceso a la tienda online; (2) enviarte información comercial sobre nuestros productos por medios electrónicos, solo si marcas la casilla correspondiente, que es opcional.",
+      "Legitimación: para atender tu solicitud, tu petición y la aceptación de esta política; para las comunicaciones comerciales, tu consentimiento, que puedes retirar en cualquier momento.",
+      "Destinatarios y transferencias internacionales de datos: para la prestación de nuestros servicios utilizamos proveedores tecnológicos que pueden tratar datos personales por cuenta nuestra: Vercel (alojamiento, despliegue e infraestructura de la aplicación web), Resend (envío y gestión de comunicaciones por correo electrónico) y Supabase (base de datos, con infraestructura en la Unión Europea). Estos proveedores pueden tratar datos personales en Estados Unidos. Las transferencias internacionales se realizarán de conformidad con el capítulo V del Reglamento General de Protección de Datos (RGPD), sobre la base del mecanismo de transferencia que resulte aplicable en cada caso, como la decisión de adecuación relativa al Marco de Privacidad de Datos UE-EE. UU., cuando la entidad receptora esté certificada y la transferencia esté cubierta por dicha decisión, o las cláusulas contractuales tipo aprobadas por la Comisión Europea, cuando corresponda. Puedes solicitar información adicional sobre las garantías aplicables a estas transferencias y sobre cómo obtener una copia de las mismas mediante los canales de contacto de esta política. No cedemos tus datos a otros terceros, salvo obligación legal.",
+      "Conservación: los datos personales proporcionados se conservarán durante el plazo necesario para cumplir con las obligaciones legales, o hasta que solicites su supresión, cuando estés legitimado para ello.",
       "Derechos: puedes acceder, rectificar y suprimir tus datos, oponerte al tratamiento, limitarlo y solicitar su portabilidad escribiendo a hola@santacroc.com. Si consideras que no tratamos tus datos correctamente, puedes reclamar ante la Agencia Española de Protección de Datos (aepd.es).",
       "Cookies: esta página no usa cookies de analítica ni de publicidad, ni guarda ningún dato en tu dispositivo.",
     ],
@@ -162,7 +171,11 @@ export const TEXTOS = {
     email: 'Email',
     telefono: 'Phone',
     mensaje: 'Message (optional)',
-    consentimiento: 'I have read and accept the privacy policy and agree to receive commercial information from La Singular Gourmet S.L.',
+    consentimiento: "I have read and accept the privacy policy (required)",
+    consentimientoComercial: "I agree to receive commercial information from La Singular Gourmet S.L. by electronic means (optional)",
+    leerPolitica: "Read the privacy and cookies policy",
+    cerrarPolitica: "Close",
+    politicaWeb: "General privacy policy of santacroc.com",
     verLegal: 'Privacy and cookies policy',
     enviar: 'Send',
     enviando: 'Sending…',
@@ -190,10 +203,10 @@ export const TEXTOS = {
     legal: [
       "Controller: La Singular Gourmet S.L. (brand SåntåCroc), tax ID B56736515, C/ Albert Ferrer i Soler nº 7, 08800 Vilanova i la Geltrú, Spain. Contact to exercise your rights: hola@santacroc.com.",
       "Data we collect: name, company name and type of business (if you are a business), address, postal code, town, email, phone, the optional message you leave us and the language you used.",
-      "Purpose: to handle your request for information and to send you commercial information about our products by electronic means. If you are within our local delivery area, also to consider giving you access to the shop.",
-      "Legal basis: your consent, which you can withdraw at any time.",
-      "Recipients: we do not share your data with third parties, except where legally required. Technology providers that supply us with services (hosting and database) access it only as data processors, with appropriate safeguards.",
-      "Retention: 24 months from our last contact with you, or until you withdraw your consent if earlier.",
+      "Purposes: (1) to handle your request for information and contact you to answer it; if you are within our local delivery area, also to consider giving you access to the online shop; (2) to send you commercial information about our products by electronic means, only if you tick the corresponding box, which is optional.",
+      "Legal basis: to handle your request, your request itself and your acceptance of this policy; for commercial communications, your consent, which you can withdraw at any time.",
+      "Recipients and international data transfers: to provide our services we use technology providers that may process personal data on our behalf: Vercel (hosting, deployment and infrastructure of the web application), Resend (sending and management of email communications) and Supabase (database, with infrastructure in the European Union). These providers may process personal data in the United States. International transfers will be carried out in accordance with Chapter V of the General Data Protection Regulation (GDPR), on the basis of the transfer mechanism applicable in each case, such as the adequacy decision on the EU-US Data Privacy Framework, where the recipient is certified and the transfer is covered by that decision, or the standard contractual clauses approved by the European Commission, where applicable. You may request additional information about the safeguards applying to these transfers and how to obtain a copy of them through the contact channels in this policy. We do not share your data with other third parties, except where legally required.",
+      "Retention: the personal data provided will be kept for the period necessary to comply with legal obligations, or until you request their deletion, where you are entitled to do so.",
       "Rights: you can access, rectify and erase your data, object to or restrict its processing and request portability by writing to hola@santacroc.com. If you believe we are not handling your data properly, you can lodge a complaint with the Spanish Data Protection Agency (aepd.es).",
       "Cookies: this page does not use analytics or advertising cookies and does not store any data on your device.",
     ],

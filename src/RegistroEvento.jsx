@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import { supabase } from './supabase'
-import { TEXTOS, IDIOMAS, VERSION_LEGAL, detectarIdioma } from './textos'
+import { TEXTOS, IDIOMAS, VERSION_LEGAL, URL_POLITICA_WEB, detectarIdioma } from './textos'
 
 // Paleta de marca de docs/guia_estilo.html.
 const LLUM = '#FFF8E7'
@@ -22,6 +22,7 @@ const FORM_VACIO = {
   telefono: '',
   mensaje: '',
   consentimiento: false,
+  consentimientoComercial: false,
   web: '', // campo trampa anti-bots: las personas no lo ven
 }
 
@@ -67,6 +68,8 @@ export default function RegistroEvento() {
   const [enviando, setEnviando] = useState(false)
   const [errorEnvio, setErrorEnvio] = useState('')
   const [enZona, setEnZona] = useState(false)
+  const [verPolitica, setVerPolitica] = useState(false)
+  const [politicaLeida, setPoliticaLeida] = useState(false)
   const t = TEXTOS[idioma]
   const esEmpresa = form.tipo === 'EMPRESA'
 
@@ -118,6 +121,7 @@ export default function RegistroEvento() {
       p_mensaje: form.mensaje,
       p_idioma: idioma,
       p_consentimiento: form.consentimiento,
+      p_consentimiento_comercial: form.consentimientoComercial,
       p_version_legal: VERSION_LEGAL,
       p_trampa: form.web,
     })
@@ -131,7 +135,13 @@ export default function RegistroEvento() {
     setEstado('enviado')
   }
 
+  function abrirPolitica() {
+    setVerPolitica(true)
+    setPoliticaLeida(true)
+  }
+
   function otraPersona() {
+    setPoliticaLeida(false)
     setEnZona(false)
     setForm(FORM_VACIO)
     setErrorEnvio('')
@@ -336,23 +346,36 @@ export default function RegistroEvento() {
                 </label>
               </div>
 
-              <label className="flex items-start gap-3 pt-2">
-                <input
-                  type="checkbox" required checked={form.consentimiento}
-                  onChange={e => cambiar('consentimiento', e.target.checked)}
-                  className="mt-1 h-5 w-5 shrink-0 accent-[#D94F2B]"
-                />
-                <span className="text-sm leading-snug">{t.consentimiento}</span>
-              </label>
+              <div className="space-y-3 pt-2">
+                <button
+                  type="button" onClick={abrirPolitica}
+                  className="text-[11px] uppercase tracking-[0.18em] underline underline-offset-4"
+                >
+                  {t.leerPolitica}
+                </button>
 
-              <details className="text-sm">
-                <summary className="cursor-pointer text-[11px] uppercase tracking-[0.18em] opacity-70">
-                  {t.verLegal}
-                </summary>
-                <div className="mt-3 space-y-2 text-[13px] leading-snug opacity-80">
-                  {t.legal.map(p => <p key={p}>{p}</p>)}
-                </div>
-              </details>
+                <label className="flex items-start gap-3">
+                  <input
+                    type="checkbox" required checked={form.consentimiento}
+                    onChange={e => {
+                      // Hay que abrir la política antes de poder aceptarla
+                      if (!politicaLeida) { abrirPolitica(); return }
+                      cambiar('consentimiento', e.target.checked)
+                    }}
+                    className="mt-1 h-5 w-5 shrink-0 accent-[#D94F2B]"
+                  />
+                  <span className="text-sm leading-snug">{t.consentimiento}</span>
+                </label>
+
+                <label className="flex items-start gap-3">
+                  <input
+                    type="checkbox" checked={form.consentimientoComercial}
+                    onChange={e => cambiar('consentimientoComercial', e.target.checked)}
+                    className="mt-1 h-5 w-5 shrink-0 accent-[#D94F2B]"
+                  />
+                  <span className="text-sm leading-snug">{t.consentimientoComercial}</span>
+                </label>
+              </div>
 
               {errorEnvio && (
                 <p role="alert" className="text-sm font-semibold" style={{ color: BRASA }}>{errorEnvio}</p>
@@ -368,6 +391,37 @@ export default function RegistroEvento() {
             </form>
           )}
         </main>
+
+        {verPolitica && (
+          <div
+            className="fixed inset-0 z-50 flex items-end sm:items-center justify-center sm:p-4"
+            style={{ background: 'rgba(26,20,16,0.75)' }}
+            role="dialog" aria-modal="true" aria-label={t.legalTitulo}
+          >
+            <div className="w-full sm:max-w-lg max-h-[92vh] flex flex-col" style={{ background: LLUM, color: NIT }}>
+              <div className="p-5 pb-3 text-[11px] uppercase tracking-[0.2em] font-semibold" style={{ color: BRASA }}>
+                {t.legalTitulo}
+              </div>
+              <div className="px-5 overflow-y-auto space-y-3 text-[14px] leading-snug">
+                {t.legal.map(p => <p key={p}>{p}</p>)}
+                <p>
+                  <a href={URL_POLITICA_WEB} target="_blank" rel="noopener noreferrer" className="underline underline-offset-4">
+                    {t.politicaWeb}
+                  </a>
+                </p>
+              </div>
+              <div className="p-5 pt-4">
+                <button
+                  type="button" onClick={() => setVerPolitica(false)}
+                  className="w-full h-12 text-sm uppercase tracking-[0.2em] font-semibold"
+                  style={{ background: BRASA, color: LLUM }}
+                >
+                  {t.cerrarPolitica}
+                </button>
+              </div>
+            </div>
+          </div>
+        )}
 
         <p className="mt-3 text-center text-[11px] tracking-wide"
            style={{ color: evento?.activo && fondo ? LLUM : NIT, opacity: 0.6 }}>
