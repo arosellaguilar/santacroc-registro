@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { supabase } from './supabase'
 import { TEXTOS_BAJA, IDIOMAS, detectarIdioma } from './textos'
 
-// Misma paleta de marca que el formulario (docs/guia_estilo.html)
+// Misma paleta de marca que el formulario (docs/diseño web y etiquetas/guia_estilo.html)
 const LLUM = '#FFF8E7'
 const BRASA = '#D94F2B'
 const NIT = '#1A1410'

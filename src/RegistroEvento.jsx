@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import { supabase } from './supabase'
 import { TEXTOS, IDIOMAS, VERSION_LEGAL, URL_POLITICA_WEB, detectarIdioma } from './textos'
 
-// Paleta de marca de docs/guia_estilo.html.
+// Paleta de marca de docs/diseño web y etiquetas/guia_estilo.html.
 const LLUM = '#FFF8E7'
 const BRASA = '#D94F2B'
 const NIT = '#1A1410'
