@@ -3,7 +3,7 @@
 
 // Se guarda en cada lead junto con la fecha de consentimiento.
 // Cada vez que cambie el texto legal de privacidad, cambiar esta versión.
-export const VERSION_LEGAL = 'v3-2026-10'
+export const VERSION_LEGAL = 'v4-2026-10'
 export const URL_POLITICA_WEB = "https://santacroc.com/politica-de-privacitat/"
 
 export const IDIOMAS = ['ca', 'es', 'en']
@@ -42,7 +42,7 @@ export const TEXTOS = {
     telefono: 'Telèfon',
     mensaje: 'Missatge (opcional)',
     consentimiento: "He llegit i accepto la política de privadesa (obligatori)",
-    consentimientoComercial: "Consento rebre informació comercial de La Singular Gourmet S.L. per mitjans electrònics (opcional)",
+    consentimientoComercial: "Consento rebre informació comercial de La Singular Gourmet, S.L.U. per mitjans electrònics (opcional)",
     leerPolitica: "Llegir la política de privadesa i cookies",
     cerrarPolitica: "Tancar",
     politicaWeb: "Política de privadesa general de santacroc.com",
@@ -71,7 +71,7 @@ export const TEXTOS = {
     },
     legalTitulo: 'Política de privadesa i cookies',
     legal: [
-      "Responsable: La Singular Gourmet S.L. (marca SåntåCroc), NIF B56736515, C/ Albert Ferrer i Soler nº 7, 08800 Vilanova i la Geltrú. Contacte per exercir els teus drets: hola@santacroc.com.",
+      "Responsable: LA SINGULAR GOURMET, SOCIEDAD LIMITADA UNIPERSONAL (La Singular Gourmet, S.L.U.; marca SåntåCroc), NIF B56736515, Carrer La Fita, 7, 08800 Vilanova i la Geltrú. Contacte per exercir els teus drets: hola@santacroc.com.",
       "Dades que recollim: nom, nom de l'empresa i tipus de negoci (si ets empresa), adreça, codi postal, població, correu electrònic, telèfon, el missatge opcional que ens deixis i l'idioma que has fet servir.",
       "Finalitats: (1) atendre la teva sol·licitud d'informació i contactar-te per respondre-la; si ets dins la nostra zona de repartiment proper, també valorar donar-te accés a la botiga en línia; (2) enviar-te informació comercial sobre els nostres productes per mitjans electrònics, només si marques la casella corresponent, que és opcional.",
       "Legitimació: per atendre la teva sol·licitud d'informació: si ets particular, l'aplicació de mesures precontractuals a petició teva (art. 6.1.b RGPD), quan la sol·licitud està relacionada amb la possible contractació dels nostres productes; si ets persona de contacte d'una empresa, l'interès legítim de l'empresa a atendre consultes i mantenir relacions comercials i professionals amb les empreses interessades (art. 6.1.f RGPD i art. 19 de la LOPDGDD). Per a les comunicacions comercials per mitjans electrònics: el teu consentiment (art. 6.1.a RGPD i art. 21 LSSI), que és voluntari, es demana amb una casella específica i no premarcada, és independent de la teva sol·licitud d'informació i el pots retirar en qualsevol moment. Atendre la teva sol·licitud no depèn que acceptis les comunicacions comercials.",
@@ -107,7 +107,7 @@ export const TEXTOS = {
     telefono: 'Teléfono',
     mensaje: 'Mensaje (opcional)',
     consentimiento: "He leído y acepto la política de privacidad (obligatorio)",
-    consentimientoComercial: "Consiento recibir información comercial de La Singular Gourmet S.L. por medios electrónicos (opcional)",
+    consentimientoComercial: "Consiento recibir información comercial de La Singular Gourmet, S.L.U. por medios electrónicos (opcional)",
     leerPolitica: "Leer la política de privacidad y cookies",
     cerrarPolitica: "Cerrar",
     politicaWeb: "Política de privacidad general de santacroc.com",
@@ -136,7 +136,7 @@ export const TEXTOS = {
     },
     legalTitulo: 'Política de privacidad y cookies',
     legal: [
-      "Responsable: La Singular Gourmet S.L. (marca SåntåCroc), NIF B56736515, C/ Albert Ferrer i Soler nº 7, 08800 Vilanova i la Geltrú. Contacto para ejercer tus derechos: hola@santacroc.com.",
+      "Responsable: LA SINGULAR GOURMET, SOCIEDAD LIMITADA UNIPERSONAL (La Singular Gourmet, S.L.U.; marca SåntåCroc), NIF B56736515, Calle La Fita, 7, 08800 Vilanova i la Geltrú. Contacto para ejercer tus derechos: hola@santacroc.com.",
       "Datos que recogemos: nombre, nombre de la empresa y tipo de negocio (si eres empresa), dirección, código postal, población, email, teléfono, el mensaje opcional que nos dejes y el idioma que has usado.",
       "Finalidades: (1) atender tu solicitud de información y contactarte para responderla; si estás en nuestra zona de reparto cercano, también valorar darte acceso a la tienda online; (2) enviarte información comercial sobre nuestros productos por medios electrónicos, solo si marcas la casilla correspondiente, que es opcional.",
       "Legitimación: para atender tu solicitud de información: si eres particular, la aplicación de medidas precontractuales a petición tuya (art. 6.1.b RGPD), cuando la solicitud esté relacionada con la posible contratación de nuestros productos; si eres persona de contacto de una empresa, el interés legítimo de la empresa en atender consultas y mantener relaciones comerciales y profesionales con las empresas interesadas (art. 6.1.f RGPD y art. 19 de la LOPDGDD). Para las comunicaciones comerciales por medios electrónicos: tu consentimiento (art. 6.1.a RGPD y art. 21 LSSI), que es voluntario, se pide con una casilla específica y no premarcada, es independiente de tu solicitud de información y puedes retirarlo en cualquier momento. Atender tu solicitud no depende de que aceptes las comunicaciones comerciales.",
@@ -172,7 +172,7 @@ export const TEXTOS = {
     telefono: 'Phone',
     mensaje: 'Message (optional)',
     consentimiento: "I have read and accept the privacy policy (required)",
-    consentimientoComercial: "I agree to receive commercial information from La Singular Gourmet S.L. by electronic means (optional)",
+    consentimientoComercial: "I agree to receive commercial information from La Singular Gourmet, S.L.U. by electronic means (optional)",
     leerPolitica: "Read the privacy and cookies policy",
     cerrarPolitica: "Close",
     politicaWeb: "General privacy policy of santacroc.com",
@@ -201,7 +201,7 @@ export const TEXTOS = {
     },
     legalTitulo: 'Privacy and cookies policy',
     legal: [
-      "Controller: La Singular Gourmet S.L. (brand SåntåCroc), tax ID B56736515, C/ Albert Ferrer i Soler nº 7, 08800 Vilanova i la Geltrú, Spain. Contact to exercise your rights: hola@santacroc.com.",
+      "Controller: LA SINGULAR GOURMET, SOCIEDAD LIMITADA UNIPERSONAL (La Singular Gourmet, S.L.U.; brand SåntåCroc), tax ID B56736515, Calle La Fita, 7, 08800 Vilanova i la Geltrú, Spain. Contact to exercise your rights: hola@santacroc.com.",
       "Data we collect: name, company name and type of business (if you are a business), address, postal code, town, email, phone, the optional message you leave us and the language you used.",
       "Purposes: (1) to handle your request for information and contact you to answer it; if you are within our local delivery area, also to consider giving you access to the online shop; (2) to send you commercial information about our products by electronic means, only if you tick the corresponding box, which is optional.",
       "Legal basis: to handle your request for information: if you are an individual, pre-contractual measures taken at your request (Art. 6(1)(b) GDPR), where the request relates to the possible purchase of our products; if you are a contact person of a company, the company's legitimate interest in handling enquiries and maintaining commercial and professional relationships with interested companies (Art. 6(1)(f) GDPR and Art. 19 of the Spanish LOPDGDD). For commercial communications by electronic means: your consent (Art. 6(1)(a) GDPR and Art. 21 of the Spanish LSSI), which is voluntary, is requested through a specific, unticked box, is independent of your request for information and can be withdrawn at any time. Handling your request does not depend on your accepting commercial communications.",

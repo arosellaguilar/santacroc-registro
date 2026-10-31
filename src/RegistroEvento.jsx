@@ -425,7 +425,7 @@ export default function RegistroEvento() {
 
         <p className="mt-3 text-center text-[11px] tracking-wide"
            style={{ color: evento?.activo && fondo ? LLUM : NIT, opacity: 0.6 }}>
-          La Singular Gourmet S.L.
+          La Singular Gourmet, S.L.U.
         </p>
       </div>
     </div>
