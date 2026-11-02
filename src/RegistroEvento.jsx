@@ -291,6 +291,7 @@ export default function RegistroEvento() {
                   className={CAMPO}
                 />
               </Campo>
+              {esEmpresa && <p className="text-xs opacity-70 -mt-2">{t.avisoNegocio}</p>}
               <Campo etiqueta={t.direccion}>
                 <input
                   required maxLength={200} autoComplete="street-address"
@@ -333,6 +334,7 @@ export default function RegistroEvento() {
                   value={form.mensaje} onChange={e => cambiar('mensaje', e.target.value)}
                   className="w-full px-3 py-2 text-base bg-white border border-black/15 focus:outline-none focus:border-[#D94F2B]"
                 />
+                <p className="mt-1 text-xs opacity-70">{t.avisoMensaje}</p>
               </Campo>
 
               {/* Trampa anti-bots */}
@@ -404,6 +406,10 @@ export default function RegistroEvento() {
               </div>
               <div className="px-5 overflow-y-auto space-y-3 text-[14px] leading-snug">
                 {t.legal.map(p => <p key={p}>{p}</p>)}
+                <div className="p-3 border-l-4" style={{ borderColor: BRASA, background: 'rgba(217,79,43,0.08)' }}>
+                  <p className="font-semibold mb-1">{t.oposicionTitulo}</p>
+                  <p>{t.oposicionTexto}</p>
+                </div>
                 <p>
                   <a href={URL_POLITICA_WEB} target="_blank" rel="noopener noreferrer" className="underline underline-offset-4">
                     {t.politicaWeb}

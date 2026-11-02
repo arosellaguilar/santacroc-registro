@@ -3,7 +3,7 @@
 
 // Se guarda en cada lead junto con la fecha de consentimiento.
 // Cada vez que cambie el texto legal de privacidad, cambiar esta versión.
-export const VERSION_LEGAL = 'v4-2026-10'
+export const VERSION_LEGAL = 'v5-2026-11'
 export const URL_POLITICA_WEB = "https://santacroc.com/politica-de-privacitat/"
 
 export const IDIOMAS = ['ca', 'es', 'en']
@@ -19,7 +19,7 @@ export const TEXTOS = {
   ca: {
     nombreIdioma: 'Català',
     titulo: 'Vols saber-ne més?',
-    subtitulo: "Deixa'ns les teves dades i t'enviarem informació sobre els nostres productes.",
+    subtitulo: "Deixa'ns les teves dades i et respondrem. Si vols, també t'enviarem la nostra presentació per correu: marca la casella opcional del final.",
     eventoKicker: 'Ens trobaràs a',
     quienEres: 'Qui ets?',
     particular: 'Sóc particular',
@@ -41,6 +41,8 @@ export const TEXTOS = {
     email: 'Correu electrònic',
     telefono: 'Telèfon',
     mensaje: 'Missatge (opcional)',
+    avisoNegocio: "Indica l'adreça, el correu electrònic i el telèfon del negoci, no els personals.",
+    avisoMensaje: "No hi incloguis dades de salut, ideologia, religió o orientació sexual, ni dades personals d'altres persones, ni informació confidencial.",
     consentimiento: "He llegit i accepto la política de privadesa (obligatori)",
     consentimientoComercial: "Consento rebre informació comercial de La Singular Gourmet, S.L.U. per mitjans electrònics (opcional)",
     leerPolitica: "Llegir la política de privadesa i cookies",
@@ -70,13 +72,15 @@ export const TEXTOS = {
       generico: "No s'ha pogut enviar. Torna-ho a provar.",
     },
     legalTitulo: 'Política de privadesa i cookies',
+    oposicionTitulo: "Dret d'oposició",
+    oposicionTexto: "Tens dret a oposar-te en qualsevol moment al tractament de les teves dades basat en el nostre interès legítim, per motius relacionats amb la teva situació particular (art. 21.1 RGPD). Deixarem de tractar-les, tret que acreditem motius legítims imperiosos que prevalguin sobre els teus interessos, drets i llibertats, o que el tractament sigui necessari per formular, exercir o defensar reclamacions. Si el tractament té per finalitat el màrqueting directe, t'hi pots oposar en qualsevol moment i deixarem de tractar les teves dades amb aquesta finalitat. Per exercir aquest dret, escriu a hola@santacroc.com indicant que vols exercir el dret d'oposició.",
     legal: [
       "Responsable: LA SINGULAR GOURMET, SOCIEDAD LIMITADA UNIPERSONAL (La Singular Gourmet, S.L.U.; marca SåntåCroc), NIF B56736515, Carrer La Fita, 7, 08800 Vilanova i la Geltrú. Contacte per exercir els teus drets: hola@santacroc.com.",
       "Dades que recollim: nom, nom de l'empresa i tipus de negoci (si ets empresa), adreça, codi postal, població, correu electrònic, telèfon, el missatge opcional que ens deixis i l'idioma que has fet servir.",
       "Finalitats: (1) atendre la teva sol·licitud d'informació i contactar-te per respondre-la; si ets dins la nostra zona de repartiment proper, també valorar donar-te accés a la botiga en línia; (2) enviar-te informació comercial sobre els nostres productes per mitjans electrònics, només si marques la casella corresponent, que és opcional.",
       "Legitimació: per atendre la teva sol·licitud d'informació: si ets particular, l'aplicació de mesures precontractuals a petició teva (art. 6.1.b RGPD), quan la sol·licitud està relacionada amb la possible contractació dels nostres productes; si ets persona de contacte d'una empresa, l'interès legítim de l'empresa a atendre consultes i mantenir relacions comercials i professionals amb les empreses interessades (art. 6.1.f RGPD i art. 19 de la LOPDGDD). Per a les comunicacions comercials per mitjans electrònics: el teu consentiment (art. 6.1.a RGPD i art. 21 LSSI), que és voluntari, es demana amb una casella específica i no premarcada, és independent de la teva sol·licitud d'informació i el pots retirar en qualsevol moment. Atendre la teva sol·licitud no depèn que acceptis les comunicacions comercials.",
       "Destinataris i transferències internacionals de dades: per prestar els nostres serveis utilitzem proveïdors tecnològics que poden tractar dades personals per compte nostre: Vercel (allotjament, desplegament i infraestructura de l'aplicació web), Resend (enviament i gestió de comunicacions per correu electrònic) i Supabase (base de dades, amb infraestructura a la Unió Europea). Aquests proveïdors poden tractar dades personals als Estats Units. Les transferències internacionals es faran de conformitat amb el capítol V del Reglament General de Protecció de Dades (RGPD), sobre la base del mecanisme de transferència que sigui aplicable en cada cas, com la decisió d'adequació relativa al Marc de Privadesa de Dades UE-EUA, quan l'entitat receptora estigui certificada i la transferència estigui coberta per aquesta decisió, o les clàusules contractuals tipus aprovades per la Comissió Europea, quan correspongui. Pots sol·licitar informació addicional sobre les garanties aplicables a aquestes transferències i sobre com obtenir-ne una còpia mitjançant els canals de contacte d'aquesta política. No cedim les teves dades a altres tercers, tret d'obligació legal.",
-      "Conservació: les dades personals proporcionades es conservaran durant el termini necessari per complir les obligacions legals, o fins que en sol·licitis la supressió, quan hi estiguis legitimat.",
+      "Conservació: conservarem les teves dades durant el temps necessari per atendre la teva sol·licitud i, si escau, mantenir la relació comercial, i les revisarem periòdicament. Les suprimirem quan deixin de ser necessàries o quan ho sol·licitis, i només les conservarem més enllà si una norma ho exigeix (per exemple, obligacions fiscals o comptables si arribes a ser client). Per respectar la teva elecció, conservem la prova del teu consentiment i les baixes de comunicacions comercials.",
       "Drets: pots accedir, rectificar i suprimir les teves dades, oposar-te al tractament, limitar-lo i sol·licitar-ne la portabilitat escrivint a hola@santacroc.com. Si consideres que no tractem correctament les teves dades, pots reclamar davant l'Agència Espanyola de Protecció de Dades (aepd.es).",
       "Cookies: aquesta pàgina no utilitza cookies d'analítica ni de publicitat, ni desa cap dada al teu dispositiu.",
     ],
@@ -84,7 +88,7 @@ export const TEXTOS = {
   es: {
     nombreIdioma: 'Castellano',
     titulo: '¿Quieres saber más?',
-    subtitulo: 'Déjanos tus datos y te enviaremos información sobre nuestros productos.',
+    subtitulo: "Déjanos tus datos y te responderemos. Si quieres, también te enviaremos nuestra presentación por correo: marca la casilla opcional del final.",
     eventoKicker: 'Nos encuentras en',
     quienEres: '¿Quién eres?',
     particular: 'Soy particular',
@@ -106,6 +110,8 @@ export const TEXTOS = {
     email: 'Correo electrónico',
     telefono: 'Teléfono',
     mensaje: 'Mensaje (opcional)',
+    avisoNegocio: "Indica la dirección, el correo electrónico y el teléfono del negocio, no los personales.",
+    avisoMensaje: "No incluyas datos de salud, ideología, religión u orientación sexual, ni datos personales de otras personas, ni información confidencial.",
     consentimiento: "He leído y acepto la política de privacidad (obligatorio)",
     consentimientoComercial: "Consiento recibir información comercial de La Singular Gourmet, S.L.U. por medios electrónicos (opcional)",
     leerPolitica: "Leer la política de privacidad y cookies",
@@ -135,13 +141,15 @@ export const TEXTOS = {
       generico: 'No se ha podido enviar. Vuelve a intentarlo.',
     },
     legalTitulo: 'Política de privacidad y cookies',
+    oposicionTitulo: "Derecho de oposición",
+    oposicionTexto: "Tienes derecho a oponerte en cualquier momento al tratamiento de tus datos basado en nuestro interés legítimo, por motivos relacionados con tu situación particular (art. 21.1 RGPD). Dejaremos de tratarlos, salvo que acreditemos motivos legítimos imperiosos que prevalezcan sobre tus intereses, derechos y libertades, o que el tratamiento sea necesario para formular, ejercer o defender reclamaciones. Si el tratamiento tiene por finalidad el marketing directo, puedes oponerte en cualquier momento y dejaremos de tratar tus datos con esa finalidad. Para ejercer este derecho, escribe a hola@santacroc.com indicando que quieres ejercer el derecho de oposición.",
     legal: [
       "Responsable: LA SINGULAR GOURMET, SOCIEDAD LIMITADA UNIPERSONAL (La Singular Gourmet, S.L.U.; marca SåntåCroc), NIF B56736515, Calle La Fita, 7, 08800 Vilanova i la Geltrú. Contacto para ejercer tus derechos: hola@santacroc.com.",
       "Datos que recogemos: nombre, nombre de la empresa y tipo de negocio (si eres empresa), dirección, código postal, población, email, teléfono, el mensaje opcional que nos dejes y el idioma que has usado.",
       "Finalidades: (1) atender tu solicitud de información y contactarte para responderla; si estás en nuestra zona de reparto cercano, también valorar darte acceso a la tienda online; (2) enviarte información comercial sobre nuestros productos por medios electrónicos, solo si marcas la casilla correspondiente, que es opcional.",
       "Legitimación: para atender tu solicitud de información: si eres particular, la aplicación de medidas precontractuales a petición tuya (art. 6.1.b RGPD), cuando la solicitud esté relacionada con la posible contratación de nuestros productos; si eres persona de contacto de una empresa, el interés legítimo de la empresa en atender consultas y mantener relaciones comerciales y profesionales con las empresas interesadas (art. 6.1.f RGPD y art. 19 de la LOPDGDD). Para las comunicaciones comerciales por medios electrónicos: tu consentimiento (art. 6.1.a RGPD y art. 21 LSSI), que es voluntario, se pide con una casilla específica y no premarcada, es independiente de tu solicitud de información y puedes retirarlo en cualquier momento. Atender tu solicitud no depende de que aceptes las comunicaciones comerciales.",
       "Destinatarios y transferencias internacionales de datos: para la prestación de nuestros servicios utilizamos proveedores tecnológicos que pueden tratar datos personales por cuenta nuestra: Vercel (alojamiento, despliegue e infraestructura de la aplicación web), Resend (envío y gestión de comunicaciones por correo electrónico) y Supabase (base de datos, con infraestructura en la Unión Europea). Estos proveedores pueden tratar datos personales en Estados Unidos. Las transferencias internacionales se realizarán de conformidad con el capítulo V del Reglamento General de Protección de Datos (RGPD), sobre la base del mecanismo de transferencia que resulte aplicable en cada caso, como la decisión de adecuación relativa al Marco de Privacidad de Datos UE-EE. UU., cuando la entidad receptora esté certificada y la transferencia esté cubierta por dicha decisión, o las cláusulas contractuales tipo aprobadas por la Comisión Europea, cuando corresponda. Puedes solicitar información adicional sobre las garantías aplicables a estas transferencias y sobre cómo obtener una copia de las mismas mediante los canales de contacto de esta política. No cedemos tus datos a otros terceros, salvo obligación legal.",
-      "Conservación: los datos personales proporcionados se conservarán durante el plazo necesario para cumplir con las obligaciones legales, o hasta que solicites su supresión, cuando estés legitimado para ello.",
+      "Conservación: conservaremos tus datos durante el tiempo necesario para atender tu solicitud y, en su caso, mantener la relación comercial, y los revisaremos periódicamente. Los suprimiremos cuando dejen de ser necesarios o cuando lo solicites, y solo los conservaremos más allá si una norma lo exige (por ejemplo, obligaciones fiscales o contables si llegas a ser cliente). Para respetar tu elección, conservamos la prueba de tu consentimiento y las bajas de comunicaciones comerciales.",
       "Derechos: puedes acceder, rectificar y suprimir tus datos, oponerte al tratamiento, limitarlo y solicitar su portabilidad escribiendo a hola@santacroc.com. Si consideras que no tratamos tus datos correctamente, puedes reclamar ante la Agencia Española de Protección de Datos (aepd.es).",
       "Cookies: esta página no usa cookies de analítica ni de publicidad, ni guarda ningún dato en tu dispositivo.",
     ],
@@ -149,7 +157,7 @@ export const TEXTOS = {
   en: {
     nombreIdioma: 'English',
     titulo: 'Want to know more?',
-    subtitulo: "Leave us your details and we'll send you information about our products.",
+    subtitulo: "Leave us your details and we'll get back to you. If you wish, we'll also email you our presentation: tick the optional box at the end.",
     eventoKicker: 'Find us at',
     quienEres: 'Who are you?',
     particular: "I'm an individual",
@@ -171,6 +179,8 @@ export const TEXTOS = {
     email: 'Email',
     telefono: 'Phone',
     mensaje: 'Message (optional)',
+    avisoNegocio: "Please give the business address, email and phone number, not personal ones.",
+    avisoMensaje: "Please do not include health, political, religious or sexual-orientation data, other people's personal data, or confidential information.",
     consentimiento: "I have read and accept the privacy policy (required)",
     consentimientoComercial: "I agree to receive commercial information from La Singular Gourmet, S.L.U. by electronic means (optional)",
     leerPolitica: "Read the privacy and cookies policy",
@@ -200,13 +210,15 @@ export const TEXTOS = {
       generico: 'It could not be sent. Please try again.',
     },
     legalTitulo: 'Privacy and cookies policy',
+    oposicionTitulo: "Right to object",
+    oposicionTexto: "You have the right to object at any time to the processing of your data based on our legitimate interest, on grounds relating to your particular situation (Art. 21(1) GDPR). We will stop processing it unless we demonstrate compelling legitimate grounds that override your interests, rights and freedoms, or the processing is needed to establish, exercise or defend legal claims. Where the processing is for direct marketing, you may object at any time and we will stop processing your data for that purpose. To exercise this right, write to hola@santacroc.com stating that you wish to object.",
     legal: [
       "Controller: LA SINGULAR GOURMET, SOCIEDAD LIMITADA UNIPERSONAL (La Singular Gourmet, S.L.U.; brand SåntåCroc), tax ID B56736515, Calle La Fita, 7, 08800 Vilanova i la Geltrú, Spain. Contact to exercise your rights: hola@santacroc.com.",
       "Data we collect: name, company name and type of business (if you are a business), address, postal code, town, email, phone, the optional message you leave us and the language you used.",
       "Purposes: (1) to handle your request for information and contact you to answer it; if you are within our local delivery area, also to consider giving you access to the online shop; (2) to send you commercial information about our products by electronic means, only if you tick the corresponding box, which is optional.",
       "Legal basis: to handle your request for information: if you are an individual, pre-contractual measures taken at your request (Art. 6(1)(b) GDPR), where the request relates to the possible purchase of our products; if you are a contact person of a company, the company's legitimate interest in handling enquiries and maintaining commercial and professional relationships with interested companies (Art. 6(1)(f) GDPR and Art. 19 of the Spanish LOPDGDD). For commercial communications by electronic means: your consent (Art. 6(1)(a) GDPR and Art. 21 of the Spanish LSSI), which is voluntary, is requested through a specific, unticked box, is independent of your request for information and can be withdrawn at any time. Handling your request does not depend on your accepting commercial communications.",
       "Recipients and international data transfers: to provide our services we use technology providers that may process personal data on our behalf: Vercel (hosting, deployment and infrastructure of the web application), Resend (sending and management of email communications) and Supabase (database, with infrastructure in the European Union). These providers may process personal data in the United States. International transfers will be carried out in accordance with Chapter V of the General Data Protection Regulation (GDPR), on the basis of the transfer mechanism applicable in each case, such as the adequacy decision on the EU-US Data Privacy Framework, where the recipient is certified and the transfer is covered by that decision, or the standard contractual clauses approved by the European Commission, where applicable. You may request additional information about the safeguards applying to these transfers and how to obtain a copy of them through the contact channels in this policy. We do not share your data with other third parties, except where legally required.",
-      "Retention: the personal data provided will be kept for the period necessary to comply with legal obligations, or until you request their deletion, where you are entitled to do so.",
+      "Retention: we will keep your data for as long as necessary to handle your request and, where applicable, to maintain the business relationship, and we will review it periodically. We will delete it when it is no longer needed or when you ask us to, and will keep it longer only where a legal rule requires it (for example, tax or accounting obligations if you become a customer). To respect your choice, we keep the proof of your consent and records of unsubscribes from commercial communications.",
       "Rights: you can access, rectify and erase your data, object to or restrict its processing and request portability by writing to hola@santacroc.com. If you believe we are not handling your data properly, you can lodge a complaint with the Spanish Data Protection Agency (aepd.es).",
       "Cookies: this page does not use analytics or advertising cookies and does not store any data on your device.",
     ],
