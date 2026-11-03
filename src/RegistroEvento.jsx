@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import { supabase } from './supabase'
-import { TEXTOS, IDIOMAS, VERSION_LEGAL, URL_POLITICA_WEB, detectarIdioma } from './textos'
+import { TEXTOS, IDIOMAS, VERSION_LEGAL, detectarIdioma } from './textos'
+import ContenidoPolitica from './ContenidoPolitica'
 
 // Paleta de marca de docs/diseño web y etiquetas/guia_estilo.html.
 const LLUM = '#FFF8E7'
@@ -404,17 +405,8 @@ export default function RegistroEvento() {
               <div className="p-5 pb-3 text-[11px] uppercase tracking-[0.2em] font-semibold" style={{ color: BRASA }}>
                 {t.legalTitulo}
               </div>
-              <div className="px-5 overflow-y-auto space-y-3 text-[14px] leading-snug">
-                {t.legal.map(p => <p key={p}>{p}</p>)}
-                <div className="p-3 border-l-4" style={{ borderColor: BRASA, background: 'rgba(217,79,43,0.08)' }}>
-                  <p className="font-semibold mb-1">{t.oposicionTitulo}</p>
-                  <p>{t.oposicionTexto}</p>
-                </div>
-                <p>
-                  <a href={URL_POLITICA_WEB} target="_blank" rel="noopener noreferrer" className="underline underline-offset-4">
-                    {t.politicaWeb}
-                  </a>
-                </p>
+              <div className="px-5 overflow-y-auto">
+                <ContenidoPolitica idioma={idioma} />
               </div>
               <div className="p-5 pt-4">
                 <button
