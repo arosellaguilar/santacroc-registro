@@ -3,7 +3,7 @@
 
 // Se guarda en cada lead junto con la fecha de consentimiento.
 // Cada vez que cambie el texto legal de privacidad, cambiar esta versión.
-export const VERSION_LEGAL = 'v6-2026-11'
+export const VERSION_LEGAL = 'v7-2026-11'
 
 export const IDIOMAS = ['ca', 'es', 'en']
 

@@ -48,6 +48,18 @@ export const POLITICA = {
           ['', "Si en el futur afegim eines de mesurament, actualitzarem aquesta política i et demanarem el consentiment abans d'activar-les quan la llei ho exigeixi."],
         ],
       },
+      {
+        titulo: "4. Ús de sistemes d'intel·ligència artificial",
+        parrafos: [
+          ['', "LA SINGULAR GOURMET, S.L.U. (SåntåCroc) podrà utilitzar eines i sistemes d'intel·ligència artificial en el desenvolupament de la seva activitat empresarial, incloent-hi tasques de creació i revisió de continguts, gestió administrativa, atenció al client, anàlisi d'informació, màrqueting i millora dels seus serveis."],
+          ['', "La utilització d'aquestes tecnologies es farà d'acord amb la normativa aplicable, en particular el Reglament (UE) 2024/1689, relatiu a la intel·ligència artificial, el Reglament (UE) 2016/679 (RGPD) i la Llei orgànica 3/2018 (LOPDGDD)."],
+          ['', "L'empresa adoptarà les mesures necessàries per garantir un ús responsable, segur i transparent d'aquestes eines, incloent-hi la supervisió humana dels resultats quan sigui necessari."],
+          ['', "Les dades personals de clients i usuaris només es podran introduir en sistemes d'intel·ligència artificial quan existeixi una finalitat legítima, una base jurídica adequada i garanties suficients de confidencialitat, seguretat i protecció de dades."],
+          ['', "L'empresa no utilitzarà sistemes d'intel·ligència artificial per adoptar decisions automatitzades que produeixin efectes jurídics o afectin significativament els usuaris sense complir les garanties i obligacions legalment exigibles."],
+          ['', "Quan sigui legalment obligatori, s'informarà els usuaris de la seva interacció amb sistemes d'intel·ligència artificial i s'identificarà el contingut generat o manipulat artificialment en els supòsits previstos per la normativa."],
+          ['', "LA SINGULAR GOURMET, S.L.U. es compromet a revisar periòdicament l'ús d'aquestes tecnologies per garantir-ne l'adequació a la legislació vigent i protegir els drets de clients, treballadors i col·laboradors."],
+        ],
+      },
     ],
     oposicion: {
       titulo: "Dret d'oposició",
@@ -101,6 +113,18 @@ export const POLITICA = {
           ['', 'Si en el futuro añadimos herramientas de medición, actualizaremos esta política y te pediremos tu consentimiento antes de activarlas cuando la ley lo exija.'],
         ],
       },
+      {
+        titulo: "4. Uso de sistemas de inteligencia artificial",
+        parrafos: [
+          ['', "LA SINGULAR GOURMET, S.L.U. (SåntåCroc) podrá utilizar herramientas y sistemas de inteligencia artificial en el desarrollo de su actividad empresarial, incluyendo tareas de creación y revisión de contenidos, gestión administrativa, atención al cliente, análisis de información, marketing y mejora de sus servicios."],
+          ['', "La utilización de estas tecnologías se realizará de conformidad con la normativa aplicable, en particular el Reglamento (UE) 2024/1689, relativo a la inteligencia artificial, el Reglamento (UE) 2016/679 (RGPD) y la Ley Orgánica 3/2018 (LOPDGDD)."],
+          ['', "La empresa adoptará las medidas necesarias para garantizar un uso responsable, seguro y transparente de estas herramientas, incluyendo la supervisión humana de los resultados cuando resulte necesario."],
+          ['', "Los datos personales de clientes y usuarios únicamente podrán introducirse en sistemas de inteligencia artificial cuando exista una finalidad legítima, una base jurídica adecuada y garantías suficientes de confidencialidad, seguridad y protección de datos."],
+          ['', "La empresa no utilizará sistemas de inteligencia artificial para adoptar decisiones automatizadas que produzcan efectos jurídicos o afecten significativamente a los usuarios sin cumplir las garantías y obligaciones legalmente exigibles."],
+          ['', "Cuando resulte legalmente obligatorio, se informará a los usuarios de su interacción con sistemas de inteligencia artificial y se identificará el contenido generado o manipulado artificialmente en los supuestos previstos por la normativa."],
+          ['', "LA SINGULAR GOURMET, S.L.U. se compromete a revisar periódicamente el uso de estas tecnologías para garantizar su adecuación a la legislación vigente y proteger los derechos de clientes, trabajadores y colaboradores."],
+        ],
+      },
     ],
     oposicion: {
       titulo: "Derecho de oposición",
@@ -152,6 +176,18 @@ export const POLITICA = {
           ['Registration form:', 'it does not use analytics or advertising cookies and does not store any data on your device.'],
           ['Customer portal:', 'it does not use analytics or advertising cookies. It stores on your device only what is essential to keep you logged in while you use it; this does not need your consent because the portal would not work without it.'],
           ['', 'If in future we add measurement tools, we will update this policy and ask for your consent before activating them where the law requires it.'],
+        ],
+      },
+      {
+        titulo: "4. Use of artificial intelligence systems",
+        parrafos: [
+          ['', "LA SINGULAR GOURMET, S.L.U. (SåntåCroc) may use artificial intelligence tools and systems in carrying out its business, including content creation and review, administrative management, customer service, information analysis, marketing and improvement of its services."],
+          ['', "These technologies will be used in accordance with applicable law, in particular Regulation (EU) 2024/1689 on artificial intelligence, Regulation (EU) 2016/679 (GDPR) and Organic Law 3/2018 (LOPDGDD)."],
+          ['', "The company will take the measures needed to ensure a responsible, secure and transparent use of these tools, including human oversight of the results where necessary."],
+          ['', "Customers' and users' personal data may only be entered into artificial intelligence systems where there is a legitimate purpose, an appropriate legal basis and sufficient guarantees of confidentiality, security and data protection."],
+          ['', "The company will not use artificial intelligence systems to make automated decisions that produce legal effects or significantly affect users without complying with the guarantees and obligations required by law."],
+          ['', "Where legally required, users will be informed that they are interacting with artificial intelligence systems, and content generated or manipulated artificially will be identified in the cases provided for by law."],
+          ['', "LA SINGULAR GOURMET, S.L.U. undertakes to review its use of these technologies periodically to ensure they comply with current legislation and to protect the rights of customers, employees and partners."],
         ],
       },
     ],
