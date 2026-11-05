@@ -44,7 +44,8 @@ export const POLITICA = {
         titulo: "3. Galetes i emmagatzematge al teu dispositiu",
         parrafos: [
           ['Formulari de registre:', 'no fa servir galetes d\'analítica ni de publicitat ni desa cap dada al teu dispositiu.'],
-          ['Portal de clients:', "no fa servir galetes d'analítica ni de publicitat. Desa al teu dispositiu només el que és imprescindible per mantenir la teva sessió iniciada mentre el fas servir; no necessita el teu consentiment perquè sense això el portal no funcionaria."],
+          ['Portal de clients:', "no fa servir galetes d'analítica ni de publicitat. Desa al teu dispositiu només el que és imprescindible perquè el portal funcioni: la teva sessió iniciada i el contingut del teu carret, perquè no el perdis; no necessita el teu consentiment perquè sense això el portal no funcionaria."],
+          ['', "Si abans has visitat santacroc.com, aquesta web pot haver deixat galetes del seu propi domini; el formulari i el portal no les fan servir."],
           ['', "Si en el futur afegim eines de mesurament, actualitzarem aquesta política i et demanarem el consentiment abans d'activar-les quan la llei ho exigeixi."],
         ],
       },
@@ -109,7 +110,8 @@ export const POLITICA = {
         titulo: '3. Cookies y almacenamiento en tu dispositivo',
         parrafos: [
           ['Formulario de registro:', 'no usa cookies de analítica ni de publicidad ni guarda ningún dato en tu dispositivo.'],
-          ['Portal de clientes:', 'no usa cookies de analítica ni de publicidad. Guarda en tu dispositivo únicamente lo imprescindible para mantener tu sesión iniciada mientras lo usas; no necesita tu consentimiento porque sin ello el portal no funcionaría.'],
+          ['Portal de clientes:', 'no usa cookies de analítica ni de publicidad. Guarda en tu dispositivo únicamente lo imprescindible para que el portal funcione: tu sesión iniciada y el contenido de tu carrito, para que no lo pierdas; no necesita tu consentimiento porque sin ello el portal no funcionaría.'],
+          ['', "Si has visitado antes santacroc.com, esa web puede haber dejado cookies de su propio dominio; el formulario y el portal no las usan."],
           ['', 'Si en el futuro añadimos herramientas de medición, actualizaremos esta política y te pediremos tu consentimiento antes de activarlas cuando la ley lo exija.'],
         ],
       },
@@ -174,7 +176,8 @@ export const POLITICA = {
         titulo: '3. Cookies and storage on your device',
         parrafos: [
           ['Registration form:', 'it does not use analytics or advertising cookies and does not store any data on your device.'],
-          ['Customer portal:', 'it does not use analytics or advertising cookies. It stores on your device only what is essential to keep you logged in while you use it; this does not need your consent because the portal would not work without it.'],
+          ['Customer portal:', 'it does not use analytics or advertising cookies. It stores on your device only what is essential for the portal to work: your logged-in session and the contents of your cart, so that you do not lose it; this does not need your consent because the portal would not work without it.'],
+          ['', "If you have visited santacroc.com before, that website may have left cookies from its own domain; the registration form and the portal do not use them."],
           ['', 'If in future we add measurement tools, we will update this policy and ask for your consent before activating them where the law requires it.'],
         ],
       },
