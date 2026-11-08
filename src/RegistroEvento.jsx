@@ -62,6 +62,8 @@ function Campo({ etiqueta, children }) {
 export default function RegistroEvento() {
   // registro.santacroc.com/<evento>; la raíz es el formulario genérico
   const slug = window.location.pathname.split('/').filter(Boolean)[0] ?? ''
+  // ?o=portal lo pone el botón «Solicitar acceso» del login del portal; la BD solo acepta ese valor
+  const origen = new URLSearchParams(window.location.search).get('o') ?? ''
   const [idioma, setIdioma] = useState(detectarIdioma)
   const [evento, setEvento] = useState(null)
   const [estado, setEstado] = useState('cargando') // cargando | listo | error | enviado
@@ -125,6 +127,7 @@ export default function RegistroEvento() {
       p_consentimiento_comercial: form.consentimientoComercial,
       p_version_legal: VERSION_LEGAL,
       p_trampa: form.web,
+      p_origen: origen,
     })
     setEnviando(false)
     if (error) {
