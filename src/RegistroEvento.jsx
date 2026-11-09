@@ -427,6 +427,12 @@ export default function RegistroEvento() {
         <p className="mt-3 text-center text-[11px] tracking-wide"
            style={{ color: evento?.activo && fondo ? LLUM : NIT, opacity: 0.6 }}>
           La Singular Gourmet, S.L.U.
+          {' · '}
+          <a href={`/aviso-legal?l=${idioma}`} target="_blank" rel="noopener noreferrer"
+             className="underline underline-offset-4">{t.enlaceAviso}</a>
+          {' · '}
+          <a href={`/privacidad?l=${idioma}`} target="_blank" rel="noopener noreferrer"
+             className="underline underline-offset-4">{t.enlacePolitica}</a>
         </p>
       </div>
     </div>
