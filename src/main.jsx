@@ -6,7 +6,9 @@ import Baja from './Baja'
 import Conservar from './Conservar'
 import Privacidad from './Privacidad'
 import AvisoLegal from './AvisoLegal'
+import AltaCliente from './AltaCliente'
 
+// /alta/<token> → formulario de alta de cliente;
 // /baja/<código> → baja de comunicaciones; /conservar/<código> → conservar los datos de contacto;
 // /privacidad → política de privacidad; /aviso-legal → aviso legal (art. 10 LSSI);
 // cualquier otra ruta → formulario (el primer tramo es el evento)
@@ -15,7 +17,8 @@ const ruta = tramos[0]?.toLowerCase()
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    {ruta === 'baja' ? <Baja token={tramos[1]} />
+    {ruta === 'alta' ? <AltaCliente token={tramos[1]} />
+      : ruta === 'baja' ? <Baja token={tramos[1]} />
       : ruta === 'conservar' ? <Conservar token={tramos[1]} />
       : ruta === 'privacidad' ? <Privacidad />
       : ruta === 'aviso-legal' ? <AvisoLegal />
